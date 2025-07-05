@@ -3,22 +3,39 @@
     "auth-method": "did"
   },
   "http-api": {
-    "cors-allowed-origins": [".*"],
-    "admin-dids": []
+    "cors-allowed-origins": [
+      ".*"
+    ],
+    "admin-dids": [
+    ]
   },
   "ipfs": {
-    "mode": "bundled"
+    "mode": "remote",
+    "host": "http://localhost:5101"
   },
   "logger": {
     "log-level": 2,
     "log-to-files": false
   },
+  "metrics": {
+    "metrics-exporter-enabled": false,
+    "prometheus-exporter-enabled": true,
+    "prometheus-exporter-port": 9465
+  },
   "network": {
     "name": "testnet-clay"
   },
-  "node": {},
+  "node": {
+    "private-seed-url": "inplace:ed25519#0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+  },
   "state-store": {
     "mode": "fs",
     "local-directory": "/root/.ceramic/statestore/"
+  },
+  "indexing": {
+    "db": "sqlite://root/.ceramic/db.sqlite3",
+    "allow-queries-before-historical-sync": true,
+    "disable-composedb": false,
+    "enable-historical-sync": false
   }
 }

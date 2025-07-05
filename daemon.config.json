@@ -10,8 +10,7 @@
     ]
   },
   "ipfs": {
-    "mode": "remote",
-    "host": "http://localhost:5101"
+    "mode": "bundled"
   },
   "logger": {
     "log-level": 2,

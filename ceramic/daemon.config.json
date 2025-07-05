@@ -10,8 +10,7 @@
     ]
   },
   "ipfs": {
-    "mode": "remote",
-    "host": "ipfs-node-render:5001"
+    
   },
   "logger": {
     "log-level": 2,

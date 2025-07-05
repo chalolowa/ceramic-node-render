@@ -12,4 +12,4 @@ ENV CERAMIC_PORT=7007
 
 EXPOSE 7007
 
-CMD ["daemon", "--config", "/root/.ceramic/daemon.config.json"]
+CMD ["daemon", "--config", "/root/.ceramic/daemon.config.json", "--ipfs-api", "http://54.191.253.12:5001"]

@@ -8,4 +8,4 @@ ENV CERAMIC_PORT=7007
 
 EXPOSE 7007
 
-CMD ["daemon"]
+CMD ["daemon", "--ipfs-api", "bundled"]

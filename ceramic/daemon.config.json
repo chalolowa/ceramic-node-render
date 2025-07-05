@@ -10,7 +10,8 @@
     ]
   },
   "ipfs": {
-    "mode": "bundled"
+    "mode": "remote",
+    "host": "https://ipfs-node-render.onrender.com"
   },
   "logger": {
     "log-level": 2,

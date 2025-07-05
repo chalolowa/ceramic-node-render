@@ -1,6 +1,6 @@
 # IPFS node for Ceramic
-FROM ipfs/go-ipfs:v0.18.0
+FROM ipfs/go-ipfs:v0.36.0-rc1
 
 EXPOSE 5001
 
-CMD ["ipfs", "daemon", "--init", "--migrate=true"]
+CMD [ "daemon", "--migrate=true"]
